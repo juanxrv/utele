@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecnológica de León</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100" x-data="{ showModal: false, modalContent: '' }">
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                    alt="Universidad Tecnológica de León" class="h-32">
+            </div>
+            <ul>
+                <li>
+                    <a href="../index.html" class="text-gray-700 hover:text-green-600">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="admisiones.html" class="hover:text-green-600">Admisiones</a>
+                        <a href="#" class="hover:text-green-600">Contáctanos</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Estudiante</a>
+                    <div class="sub-menu">
+                        <a href="tramites.html" class="hover:text-green-600">Trámites</a>
+                        <a href="#" class="hover:text-green-600">Quejas</a>
+                        <a href="normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="#" class="hover:text-green-600">Servicios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contacto.html" class="text-gray-700 hover:text-green-600">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto mt-8">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Contacto</div>
+        <div class="text-lg text-gray-600 mb-6">¡Conéctate con Nosotros!</div>
+
+        <!-- Tarjetas de Información -->
+        <div class="grid grid-cols-1 gap-6"
+            x-data="{ openModal: false, modalContent: '' }">
+
+
+            <!-- Form -->
+            <div class="card bg-white overflow-hidden hover:shadow-xl">
+                <div class="p-4">
+                    <ion-icon name="mail-outline" class="text-5xl text-green-600 mb-4"></ion-icon>
+                    <h3 class="text-xl font-semibold mb-3">Formulario de contacto</h3>
+                    <form class="w-full flex flex-col gap-3" action="">
+                      <input type="text" placeholder="Nombre" class="bg-gray-100 py-2 px-3 text-green-700 outline-none border focus:border-green-600">
+                      <input type="email" placeholder="Correo" class="bg-gray-100 py-2 px-3 text-green-700 outline-none border focus:border-green-600">
+                      <textarea  cols="30" rows="10" placeholder="Mensaje" class="bg-gray-100 py-2 px-3 text-green-700 outline-none border focus:border-green-600 resize-none"></textarea>
+                      <div class="flex justify-end">
+                        <button type="submit" class="inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Enviar</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-8" id="eventos">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Eventos</div>
+        <div class="text-lg text-gray-600 mb-6">Descubre nuestros próximos eventos y actividades</div>
+        <hr class="border-t-2 border-green-600 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Calendario de Eventos -->
+            <div class="lg:col-span-2">
+                <!-- Calendario -->
+                <div class="bg-white p-4 rounded-lg shadow-md mb-6" style="height: 400px;">
+                    <!-- Ajusta la altura según tus necesidades -->
+                    <!-- Puedes agregar aquí un calendario interactivo si lo deseas -->
+                    <div id="calendario" style="height: 100%;"></div>
+                </div>
+            </div>
+
+            <!-- Tarjetas de Eventos Deslizables -->
+            <div class="lg:col-span-1">
+                <div class="relative rounded-lg overflow-hidden bg-white shadow-lg" style="height: 400px;">
+                    <!-- Ajusta la altura según tus necesidades -->
+                    <!-- Carrusel de Eventos -->
+                    <div class="swiper-container" style="height: 100%;">
+                        <div class="swiper-wrapper">
+                            <!-- Evento 1 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://www.uv.mx/prensa/files/2022/09/140922-SIMULACRO-1.jpg" alt="Evento 1"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Simulacro</h3>
+                                        <p class="text-gray-700">Fecha: 07/12/2023</p>
+                                        <p class="text-gray-700">Ubicación: Campus central</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Evaluar la capacidad de respuesta y atención a los protocolos de emergencia por parte de la Comunidad Educativa y de la Unidad Interna de Protección Civil.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 2 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://www.utleon.edu.mx/resource/img/avisos_servicios/Banner_oficina_virtual_escolares_2_202209140402.jpg" alt="Evento 2"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Evento 2</h3>
+                                        <p class="text-gray-700">Fecha: [Fecha del evento]</p>
+                                        <p class="text-gray-700">Ubicación: [Lugar del evento]</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Más
+                                            información</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 3 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://via.placeholder.com/300x200" alt="Evento 3"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Evento 3</h3>
+                                        <p class="text-gray-700">Fecha: [Fecha del evento]</p>
+                                        <p class="text-gray-700">Ubicación: [Lugar del evento]</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Más
+                                            información</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agregar paginación -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <!-- Pie de página -->
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Universidad Tecnológica de León. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('modal', () => ({
+                showModal: false,
+                currentModal: '',
+
+                openModal(modalName) {
+                    this.currentModal = modalName;
+                    this.showModal = true;
+                },
+
+                closeModal() {
+                    this.showModal = false;
+                }
+            }));
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendario');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth', // Puedes cambiar la vista inicial según tus necesidades
+                events: [
+                    {
+                        title: 'Evento 1',
+                        start: '2023-09-30',
+                        end: '2023-10-02'
+                    },
+                    {
+                        title: 'Evento 2',
+                        start: '2023-10-05',
+                        end: '2023-10-06'
+                    },
+                    // Puedes agregar más eventos aquí
+                ],
+                height: 'parent' // Ajusta la altura según tus necesidades
+            });
+
+            calendar.render();
+        });
+    </script>
+
+</body>
+
+</html>

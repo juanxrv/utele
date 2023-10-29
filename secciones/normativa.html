@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universidad Tecnológica de León</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100" x-data="{ showModal: false, modalContent: '' }">
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                    alt="Universidad Tecnológica de León" class="h-32">
+            </div>
+            <ul>
+                <li>
+                    <a href="../index.html" class="text-gray-700 hover:text-green-600">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="admisiones.html" class="hover:text-green-600">Admisiones</a>
+                        <a href="contacto.html" class="hover:text-green-600">Contáctanos</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Estudiante</a>
+                    <div class="sub-menu">
+                        <a href="tramites.html" class="hover:text-green-600">Trámites</a>
+                        <a href="#" class="hover:text-green-600">Quejas</a>
+                        <a href="normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="#" class="hover:text-green-600">Servicios</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contacto.html" class="text-gray-700 hover:text-green-600">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container mx-auto mt-8" id="tramites" x-data="{ activeTab: 'tab-tramite-1' }">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Normativa</div>
+        <div class="text-lg text-gray-600 mb-6">Normas y Reglamentos: Navegando por el Camino del Conocimiento</div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <!-- Tabs -->
+            <ul class="flex mb-6">
+                <li class="mr-6">
+                    <a href="#" @click="activeTab = 'tab-tramite-1'"
+                        :class="{ 'text-green-600 border-b-2 border-green-600': activeTab === 'tab-tramite-1' }"
+                        class="text-gray-700 hover:text-green-600 py-2 px-4">Ámbito administrativo</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" @click="activeTab = 'tab-tramite-2'"
+                        :class="{ 'text-green-600 border-b-2 border-green-600': activeTab === 'tab-tramite-2' }"
+                        class="text-gray-700 hover:text-green-600 py-2 px-4">Ámbito educativo</a>
+                </li>
+                <li class="mr-6">
+                    <a href="#" @click="activeTab = 'tab-tramite-3'"
+                        :class="{ 'text-green-600 border-b-2 border-green-600': activeTab === 'tab-tramite-3' }"
+                        class="text-gray-700 hover:text-green-600 py-2 px-4">Ámbito laboral</a>
+                </li>
+            </ul>
+
+            <!-- Contenido de los tabs -->
+            <div id="tab-tramite-1" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-1'">
+              <!-- Tab 1 -->
+              <a class="hover:text-green-600" href="#">Lineamientos Convenios y Contratos UTL</a>
+              <a class="hover:text-green-600" href="#">Decreto 240</a>
+              <a class="hover:text-green-600" href="#">Reglamento Interior de la Universidad Tecnológica de León</a>
+              <a class="hover:text-green-600" href="#">Reglamento del Consejo Directivo</a>
+              <a class="hover:text-green-600" href="#">Reglamento de Ingresos Propios</a>
+              <a class="hover:text-green-600" href="#">Reglamento RIPPPA</a>
+              <a class="hover:text-green-600" href="#">Código de Conducta</a>
+              <a class="hover:text-green-600" href="#">Políticas para Establecer la Carga Académica del profesorado de la Universidad Tecnológica de León</a>
+              <a class="hover:text-green-600" href="#">Políticas de uso de estacionamiento</a>
+              <a class="hover:text-green-600" href="#">Criterios Generales para la Organización de los Archivos</a>
+            </div>
+
+            <div id="tab-tramite-2" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-2'">
+                <!-- Tab 2 -->
+                <a href="#" class="hover:text-green-600">Decreto 240</a>
+                <a href="#" class="hover:text-green-600">Reglamento Interior de la Universidad Tecnológica de León</a>
+                <a href="#" class="hover:text-green-600">Reglamento Académico</a>
+                <a href="#" class="hover:text-green-600">Reglamento de Servicios Bibliotecarios</a>
+                <a href="#" class="hover:text-green-600">Lineamientos Generales del Centro de Información</a>
+                <a href="#" class="hover:text-green-600">Presea León UTL</a>
+                <a href="#" class="hover:text-green-600">Presea Moneda UTL</a>
+                <a href="#" class="hover:text-green-600">Reglamento Deportivo</a>
+              </div>
+
+            <div id="tab-tramite-3" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-3'">
+                <!-- Tab 3 -->
+                <a href="#" class="hover:text-green-600">Decreto 240</a>
+                <a href="#" class="hover:text-green-600">Reglamento Interior de la Universidad Tecnológica de León</a>
+                <a href="#" class="hover:text-green-600">Contrato Colectivo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-8" id="noticias">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Últimas Noticias</div>
+        <div class="text-lg text-gray-600 mb-6">Encuentra las últimas novedades universitarias</div>
+        <hr class="border-t-2 border-green-600 mb-8">
+        <!-- Contenedor del Carrusel -->
+        <div class="relative rounded-lg overflow-hidden bg-white shadow-lg">
+            <!-- Carrusel de Noticias -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Noticia 1 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-white overflow-hidden hover:shadow-xl">
+                            <img src="https://www.utleon.edu.mx/resource/img/banners/1_202209140329.jpeg" alt="Noticia 1"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold mb-2">Egresadas y egresados UTL en 1er Encuentro de Egresados Gto </h3>
+                                <p class="text-gray-700">Egresadas y egresados UTL en 1er Encuentro de Egresados Gto</p>
+                                <a href="#"
+                                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Leer
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Noticia 2 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-white overflow-hidden hover:shadow-xl">
+                            <img src="https://www.utleon.edu.mx/admin/img_noticia/976_09292023054032.jpg" alt="Noticia 2"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold mb-2">Firma convenio la UTL con CANIRAC Y AMHML </h3>
+                                <p class="text-gray-700">Firma convenio la UTL con CANIRAC Y AMHML </p>
+                                <a href="#"
+                                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Leer
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Noticia 3 -->
+                    <div class="swiper-slide">
+                        <div class="card bg-white overflow-hidden hover:shadow-xl">
+                            <img src="https://www.utleon.edu.mx/admin/img_noticia/974_09282023114423.jpg" alt="Noticia 3"
+                                class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-xl font-semibold mb-2">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28 ANIVERSARIO</h3>
+                                <p class="text-gray-700">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28 ANIVERSARIO</p>
+                                <a href="#"
+                                    class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Leer
+                                    más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agregar paginación -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container mx-auto mt-8" id="eventos">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Eventos</div>
+        <div class="text-lg text-gray-600 mb-6">Descubre nuestros próximos eventos y actividades</div>
+        <hr class="border-t-2 border-green-600 mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Calendario de Eventos -->
+            <div class="lg:col-span-2">
+                <!-- Calendario -->
+                <div class="bg-white p-4 rounded-lg shadow-md mb-6" style="height: 400px;">
+                    <!-- Ajusta la altura según tus necesidades -->
+                    <!-- Puedes agregar aquí un calendario interactivo si lo deseas -->
+                    <div id="calendario" style="height: 100%;"></div>
+                </div>
+            </div>
+
+            <!-- Tarjetas de Eventos Deslizables -->
+            <div class="lg:col-span-1">
+                <div class="relative rounded-lg overflow-hidden bg-white shadow-lg" style="height: 400px;">
+                    <!-- Ajusta la altura según tus necesidades -->
+                    <!-- Carrusel de Eventos -->
+                    <div class="swiper-container" style="height: 100%;">
+                        <div class="swiper-wrapper">
+                            <!-- Evento 1 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://www.uv.mx/prensa/files/2022/09/140922-SIMULACRO-1.jpg" alt="Evento 1"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Simulacro</h3>
+                                        <p class="text-gray-700">Fecha: 07/12/2023</p>
+                                        <p class="text-gray-700">Ubicación: Campus central</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Evaluar la capacidad de respuesta y atención a los protocolos de emergencia por parte de la Comunidad Educativa y de la Unidad Interna de Protección Civil.</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 2 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://www.utleon.edu.mx/resource/img/avisos_servicios/Banner_oficina_virtual_escolares_2_202209140402.jpg" alt="Evento 2"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Evento 2</h3>
+                                        <p class="text-gray-700">Fecha: [Fecha del evento]</p>
+                                        <p class="text-gray-700">Ubicación: [Lugar del evento]</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Más
+                                            información</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Evento 3 -->
+                            <div class="swiper-slide">
+                                <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
+                                    <!-- Utiliza h-full para ocupar toda la altura -->
+                                    <img src="https://via.placeholder.com/300x200" alt="Evento 3"
+                                        class="w-full h-48 object-cover">
+                                    <div class="p-4">
+                                        <h3 class="text-xl font-semibold mb-2">Evento 3</h3>
+                                        <p class="text-gray-700">Fecha: [Fecha del evento]</p>
+                                        <p class="text-gray-700">Ubicación: [Lugar del evento]</p>
+                                        <a href="#"
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Más
+                                            información</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agregar paginación -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-900 text-white py-8">
+        <!-- Pie de página -->
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Universidad Tecnológica de León. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendario');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth', // Puedes cambiar la vista inicial según tus necesidades
+                events: [
+                    {
+                        title: 'Evento 1',
+                        start: '2023-09-30',
+                        end: '2023-10-02'
+                    },
+                    {
+                        title: 'Evento 2',
+                        start: '2023-10-05',
+                        end: '2023-10-06'
+                    },
+                    // Puedes agregar más eventos aquí
+                ],
+                height: 'parent' // Ajusta la altura según tus necesidades
+            });
+
+            calendar.render();
+        });
+    </script>
+
+</body>
+
+</html>

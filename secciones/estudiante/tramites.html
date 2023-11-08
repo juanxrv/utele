@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universidad Tecnológica de León</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet" />
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                        alt="Universidad Tecnológica de León" class="h-32" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="../admisiones.html" class="hover:text-green-600">Oferta Educativa</a>
+                        <a href="../aspirante/ingreso.html" class="hover:text-green-600">Ingreso</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Estudiante</a>
+                    <div class="sub-menu">
+                        <a href="../estudiante/tramites.html" class="hover:text-green-600">Trámites Escolares</a>
+                        <a href="../estudiante/servicios.html" class="hover:text-green-600">Servicios Integrales para el
+                            Alumnado</a>
+                        <a href="../estudiante/normativa.html" class="hover:text-green-600">Normativa Estudiantil</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Quejas y Denuncias</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Docente</a>
+                    <div class="sub-menu">
+                        <a href="../docente/recursos-gestion.html" class="hover:text-green-600">Recursos para la Gestión
+                            Docente</a>
+                        <a href="https://utleon.edu.mx/resource/documentos/CIV_Solicitud%202%20Politicas%20de%20carga%20acad%C3%A9mica.pdf"
+                            class="hover:text-green-600">Normativa</a>
+                        <a href="../docente/desarrollo-academico.html" class="hover:text-green-600">Desarrollo Académico
+                            y Docente</a>
+                        <!-- <a href="#" class="hover:text-green-600">Investigacion UTL</a>
+                        <a href="#" class="hover:text-green-600">Salud Integral</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Administrativo</a>
+                    <div class="sub-menu">
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Recursos para la Gestión Administrativa</a>
+                        <!-- <a href="#" class="hover:text-green-600">Desarrollo Humano y Organizacional</a> -->
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <!-- <a href="#" class="hover:text-green-600">Seguridad Institucional</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Empresario</a>
+                    <div class="sub-menu">
+                        <a href="../empresario/vinculacion-empresarial.html" class="hover:text-green-600">Vinculacion
+                            Empresarial</a>
+                        <a href="../empresario/servicios-industria.html" class="hover:text-green-600">Servicios a la
+                            Industria</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Egresado</a>
+                    <div class="sub-menu">
+                        <a href="../egresado/bolsa-trabajo.html" class="hover:text-green-600">Bolsa de Trabajo</a>
+                        <a href="../egresado/emprendimiento.html" class="hover:text-green-600">Emprendimiento</a>
+                        <a href="../egresado/educacion-continua.html" class="hover:text-green-600">Educacion
+                            Continua</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Somos UTL</a>
+                    <div class="sub-menu">
+                        <a href="../utl/utl.html" class="hover:text-green-600">Conoce la UTL</a>
+                        <a href="../utl/calidad.html" class="hover:text-green-600">Calidad</a>
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Difusión e Imagen Institucional</a>
+                        <!-- <a href="#" class="hover:text-green-600">Organos Colegiados</a> -->
+                        <a href="../normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Contáctanos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto mt-8">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Tramites</div>
+        <div class="text-lg text-gray-600 mb-6">
+            En esta sección encontrarás información sobre los trámites que puedes realizar en la Universidad Tecnológica
+            de León.
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Submenú Sticky -->
+            <div class="sm:col-span-1 lg:col-span-1">
+                <div class="sticky top-0">
+                    <ul class="bg-white p-4 shadow-lg">
+                        <li><a class="text-lg text-blue-600 mb-6" href="#solicitud-constancias">Solicitud de
+                                Constancias</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#tramite-credencial">Trámite de Credencial</a>
+                        </li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#tramite-estudiantil">Trámite Estudiantil</a>
+                        </li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#becas">Becas</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#pago-regularizacion">Pago de Examen de
+                                Regularización</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#reinscripcion">Reinscripción</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#reingreso">Reingreso</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#tramite-baja">Trámite de Baja</a></li>
+                        <li><a class="text-lg text-blue-600 mb-6" href="#titulacion">Titulación</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contenido de Admisiones -->
+            <div class="sm:col-span-2 lg:col-span-2">
+                <!-- Contenido de Admisiones aquí -->
+                <div id="solicitud-constancias" class="bg-white p-4 m-2 shadow-lg">
+                    <h2 class="text-lg text-gray-600 mb-6">Solicitud de Constancias</h2>
+                    <p>El proceso y emisión del documento de constancia de estudios se realizará por medio electrónico y
+                        de manera digital, debido al periodo de contingencia actual.</p>
+                    <p>Se emite con los datos de la persona de la Institución que valida la información, así como, un
+                        código de identificación en el documento para cualquier cotejo o validación posterior, en caso
+                        de ser requerido por quién recibe el documento.</p>
+                    <!-- Agrega más contenido si es necesario -->
+                </div>
+                <div id="tramite-credencial" class="bg-white p-4 m-2 shadow-lg">
+                    <h2 class="text-lg text-gray-600 mb-6">Reposición de Credencial</h2>
+                    <p>Si extraviaste tu credencial de alumno, es tu responsabilidad reponerla lo antes posible.</p>
+                    <p>Recuerda que la credencial de alumno es necesaria para acceder a los laboratorios y otros
+                        servicios que brinda la universidad.</p>
+                    <p>Realiza el pago de reposición de credencial, ingresando a tu cuenta de SITO en 1-Reinscripción y
+                        Referencias de Pago -> 3-Otras Referencias -> Otros Pagos -> Reposición de credencial.</p>
+                    <p>Acude a Servicios Estudiantiles a solicitar la elaboración de tu credencial.</p>
+                    <p>Recolecta las firmas y sellos de los diferentes departamentos en la Universidad en un formato
+                        proporcionado por Servicios Estudiantiles.</p>
+                    <p>Entrega el formato en Servicios Estudiantiles.</p>
+                    <p>En Servicios Estudiantiles te indicarán la fecha de entrega de tu nueva credencial.</p>
+                    <!-- Agrega más contenido si es necesario -->
+                </div>
+                <div id="becas" class="bg-white p-4 m-2 shadow-lg">
+                    <h2 class="text-lg text-gray-600 mb-6">Becas</h2>
+                    <p>La Universidad Tecnológica de León, cuenta con un sistema de Becas Internas y Externas con el
+                        objetivo de brindar apoyo para que el alumnado pueda continuar con su preparación académica y
+                        aminorar los factores económicos.</p>
+                    <p>¡Que las cuestiones financieras no sean una limitante para que puedas continuar con tus estudios!
+                    </p>
+                    <!-- Agrega más contenido si es necesario -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <img src="https://www.utleon.edu.mx/resource/iconos/footer-logo_2022.jpg" alt="Universidad Tecnológica de León"
+        class="h-32 mx-auto mt-4" />
+    <footer class="bg-gray-900 text-white py-8">
+        <!-- Pie de página -->
+        <div class="container mx-auto text-center">
+            <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png" alt="Universidad Tecnológica de León"
+                class="h-32 mx-auto" />
+            <div class="text-gray-400 text-sm mt-2">
+                &copy; Universidad Tecnológica de León, 2023. Todos los derechos
+                reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var calendarEl = document.getElementById("calendario");
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: "dayGridMonth", // Puedes cambiar la vista inicial según tus necesidades
+                events: [
+                    {
+                        title: "Evento 1",
+                        start: "2023-09-30",
+                        end: "2023-10-02",
+                    },
+                    {
+                        title: "Evento 2",
+                        start: "2023-10-05",
+                        end: "2023-10-06",
+                    },
+                    // Puedes agregar más eventos aquí
+                ],
+                height: "parent", // Ajusta la altura según tus necesidades
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>

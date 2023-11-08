@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universidad Tecnológica de León</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet" />
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                        alt="Universidad Tecnológica de León" class="h-32" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="../admisiones.html" class="hover:text-green-600">Oferta Educativa</a>
+                        <a href="../aspirante/ingreso.html" class="hover:text-green-600">Ingreso</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Estudiante</a>
+                    <div class="sub-menu">
+                        <a href="../estudiante/tramites.html" class="hover:text-green-600">Trámites Escolares</a>
+                        <a href="../estudiante/servicios.html" class="hover:text-green-600">Servicios Integrales para el
+                            Alumnado</a>
+                        <a href="../estudiante/normativa.html" class="hover:text-green-600">Normativa Estudiantil</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Quejas y Denuncias</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Docente</a>
+                    <div class="sub-menu">
+                        <a href="../docente/recursos-gestion.html" class="hover:text-green-600">Recursos para la Gestión
+                            Docente</a>
+                        <a href="https://utleon.edu.mx/resource/documentos/CIV_Solicitud%202%20Politicas%20de%20carga%20acad%C3%A9mica.pdf"
+                            class="hover:text-green-600">Normativa</a>
+                        <a href="../docente/desarrollo-academico.html" class="hover:text-green-600">Desarrollo Académico
+                            y Docente</a>
+                        <!-- <a href="#" class="hover:text-green-600">Investigacion UTL</a>
+                        <a href="#" class="hover:text-green-600">Salud Integral</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Administrativo</a>
+                    <div class="sub-menu">
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Recursos para la Gestión Administrativa</a>
+                        <!-- <a href="#" class="hover:text-green-600">Desarrollo Humano y Organizacional</a> -->
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <!-- <a href="#" class="hover:text-green-600">Seguridad Institucional</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Empresario</a>
+                    <div class="sub-menu">
+                        <a href="../empresario/vinculacion-empresarial.html" class="hover:text-green-600">Vinculacion
+                            Empresarial</a>
+                        <a href="../empresario/servicios-industria.html" class="hover:text-green-600">Servicios a la
+                            Industria</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Egresado</a>
+                    <div class="sub-menu">
+                        <a href="../egresado/bolsa-trabajo.html" class="hover:text-green-600">Bolsa de Trabajo</a>
+                        <a href="../egresado/emprendimiento.html" class="hover:text-green-600">Emprendimiento</a>
+                        <a href="../egresado/educacion-continua.html" class="hover:text-green-600">Educacion
+                            Continua</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Somos UTL</a>
+                    <div class="sub-menu">
+                        <a href="../utl/utl.html" class="hover:text-green-600">Conoce la UTL</a>
+                        <a href="../utl/calidad.html" class="hover:text-green-600">Calidad</a>
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Difusión e Imagen Institucional</a>
+                        <!-- <a href="#" class="hover:text-green-600">Organos Colegiados</a> -->
+                        <a href="../normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Contáctanos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto mt-8">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Normativa Estudiantil</div>
+        <div class="text-lg text-gray-600 mb-6">
+            <p>
+                La Normativa Estudiantil UTL brinda una serie de reglas claras que permiten una interrelación aromoniosa
+                entre los integrantes de la comunidad académica (estudiantes, docentes)
+            </p>
+            <p>
+                Es importante conocer las obligaciones, beneficios y sanciones que permitan garantizar el
+                aprovechamiento escolar y una educación de calidad.
+            </p>
+
+            <!-- 2 botones centrados con los sigueintes links https://utleon.edu.mx/public_html/alumno/reglamento-academico/Reglamento_Academico.pdf, https://utleon.edu.mx/resource/img/CALENDARIO%20LE%C3%93N.jpg  -->
+            <div class="flex justify-center mt-8">
+                <a href="https://utleon.edu.mx/public_html/alumno/reglamento-academico/Reglamento_Academico.pdf"
+                    target="_blank"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-4">Reglamento
+                    Académico</a>
+                <a href="https://utleon.edu.mx/resource/img/CALENDARIO%20LE%C3%93N.jpg" target="_blank"
+                    class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Calendario
+                    Escolar</a>
+            </div>
+
+            <h3>Comisión de Honor y Justicia</h3>
+
+            <p>
+                La Comisión de Honor y Justicia, es el órgano colegiado creado por la Universidad con el objeto de
+                sancionar la conducta de todo aquel alumnado que incurra en faltas que transtornen la vida académica de
+                la institución. Las y los integrantes tienen derecho a voz y voto y son integrados por:
+            </p>
+
+            <li>El/La titular de la Secretaría Académica, quien fungirá como Presidente;</li>
+            <li>El/La Titular de la Dirección de Planeación y Servicios Escolares, en carácter de Secretario de Actas;
+            </li>
+            <li>El/La Titular de la Dirección de Administración y Finanzas;</li>
+            <li>El/La Titular de la Dirección de Servicios Jurídicos;</li>
+            <li>El/La Titular de la Dirección de Carrera donde el alumnado que haya incurrido en la falta, quien fungirá
+                como vocal;</li>
+
+        </div>
+    </section>
+
+
+
+    <img src="https://www.utleon.edu.mx/resource/iconos/footer-logo_2022.jpg" alt="Universidad Tecnológica de León"
+        class="h-32 mx-auto mt-4" />
+    <footer class="bg-gray-900 text-white py-8">
+        <!-- Pie de página -->
+        <div class="container mx-auto text-center">
+            <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png" alt="Universidad Tecnológica de León"
+                class="h-32 mx-auto" />
+            <div class="text-gray-400 text-sm mt-2">
+                &copy; Universidad Tecnológica de León, 2023. Todos los derechos
+                reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var calendarEl = document.getElementById("calendario");
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: "dayGridMonth", // Puedes cambiar la vista inicial según tus necesidades
+                events: [
+                    {
+                        title: "Evento 1",
+                        start: "2023-09-30",
+                        end: "2023-10-02",
+                    },
+                    {
+                        title: "Evento 2",
+                        start: "2023-10-05",
+                        end: "2023-10-06",
+                    },
+                    // Puedes agregar más eventos aquí
+                ],
+                height: "parent", // Ajusta la altura según tus necesidades
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>

@@ -16,35 +16,86 @@
         <!-- Barra de navegación -->
         <nav class="container mx-auto px-4 flex justify-between items-center">
             <div class="logo">
-                <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
-                    alt="Universidad Tecnológica de León" class="h-32">
+                <a href="../index.html">
+                    <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                        alt="Universidad Tecnológica de León" class="h-32" />
+                </a>
             </div>
             <ul>
                 <li>
-                    <a href="../index.html" class="text-gray-700 hover:text-green-600">Inicio</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="admisiones.html" class="hover:text-green-600">Oferta Educativa</a>
+                        <a href="aspirante/ingreso.html" class="hover:text-green-600">Ingreso</a>
+                    </div>
                 </li>
                 <li>
-                    <a href="#" class="text-gray-700 hover:text-green-600">Aspirante</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Estudiante</a>
                     <div class="sub-menu">
-                        <a href="admisiones.html" class="hover:text-green-600">Admisiones</a>
+                        <a href="estudiante/tramites.html" class="hover:text-green-600">Trámites Escolares</a>
+                        <a href="estudiante/servicios.html" class="hover:text-green-600">Servicios Integrales para el
+                            Alumnado</a>
+                        <a href="estudiante/normativa.html" class="hover:text-green-600">Normativa Estudiantil</a>
+                        <a href="contacto.html" class="hover:text-green-600">Quejas y Denuncias</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Docente</a>
+                    <div class="sub-menu">
+                        <a href="docente/recursos-gestion.html" class="hover:text-green-600">Recursos para la Gestión
+                            Docente</a>
+                        <a href="https://utleon.edu.mx/resource/documentos/CIV_Solicitud%202%20Politicas%20de%20carga%20acad%C3%A9mica.pdf"
+                            class="hover:text-green-600">Normativa</a>
+                        <a href="docente/desarrollo-academico.html" class="hover:text-green-600">Desarrollo
+                            Académico y Docente</a>
+                        <!-- <a href="#" class="hover:text-green-600">Investigacion UTL</a>
+                        <a href="#" class="hover:text-green-600">Salud Integral</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Administrativo</a>
+                    <div class="sub-menu">
+                        <a href="administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Recursos para la Gestión Administrativa</a>
+                        <!-- <a href="#" class="hover:text-green-600">Desarrollo Humano y Organizacional</a> -->
+                        <a href="administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <!-- <a href="#" class="hover:text-green-600">Seguridad Institucional</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Empresario</a>
+                    <div class="sub-menu">
+                        <a href="empresario/vinculacion-empresarial.html" class="hover:text-green-600">Vinculacion
+                            Empresarial</a>
+                        <a href="empresario/servicios-industria.html" class="hover:text-green-600">Servicios a la
+                            Industria</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Egresado</a>
+                    <div class="sub-menu">
+                        <a href="egresado/bolsa-trabajo.html" class="hover:text-green-600">Bolsa de Trabajo</a>
+                        <a href="egresado/emprendimiento.html" class="hover:text-green-600">Emprendimiento</a>
+                        <a href="egresado/educacion-continua.html" class="hover:text-green-600">Educacion Continua</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Somos UTL</a>
+                    <div class="sub-menu">
+                        <a href="utl/utl.html" class="hover:text-green-600">Conoce la UTL</a>
+                        <a href="utl/calidad.html" class="hover:text-green-600">Calidad</a>
+                        <a href="administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Difusión e Imagen Institucional</a>
+                        <!-- <a href="#" class="hover:text-green-600">Organos Colegiados</a> -->
+                        <a href="normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
                         <a href="contacto.html" class="hover:text-green-600">Contáctanos</a>
                     </div>
-                </li>
-                <li>
-                    <a href="#" class="text-gray-700 hover:text-green-600">Estudiante</a>
-                    <div class="sub-menu">
-                        <a href="tramites.html" class="hover:text-green-600">Trámites</a>
-                        <a href="#" class="hover:text-green-600">Quejas</a>
-                        <a href="normativa.html" class="hover:text-green-600">Normativa</a>
-                        <a href="#" class="hover:text-green-600">Servicios</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="contacto.html" class="text-gray-700 hover:text-green-600">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <section class="container mx-auto mt-8" id="tramites" x-data="{ activeTab: 'tab-tramite-1' }">
         <div class="text-3xl font-semibold text-gray-800 mb-2">Normativa</div>
         <div class="text-lg text-gray-600 mb-6">Normas y Reglamentos: Navegando por el Camino del Conocimiento</div>
@@ -71,17 +122,18 @@
 
             <!-- Contenido de los tabs -->
             <div id="tab-tramite-1" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-1'">
-              <!-- Tab 1 -->
-              <a class="hover:text-green-600" href="#">Lineamientos Convenios y Contratos UTL</a>
-              <a class="hover:text-green-600" href="#">Decreto 240</a>
-              <a class="hover:text-green-600" href="#">Reglamento Interior de la Universidad Tecnológica de León</a>
-              <a class="hover:text-green-600" href="#">Reglamento del Consejo Directivo</a>
-              <a class="hover:text-green-600" href="#">Reglamento de Ingresos Propios</a>
-              <a class="hover:text-green-600" href="#">Reglamento RIPPPA</a>
-              <a class="hover:text-green-600" href="#">Código de Conducta</a>
-              <a class="hover:text-green-600" href="#">Políticas para Establecer la Carga Académica del profesorado de la Universidad Tecnológica de León</a>
-              <a class="hover:text-green-600" href="#">Políticas de uso de estacionamiento</a>
-              <a class="hover:text-green-600" href="#">Criterios Generales para la Organización de los Archivos</a>
+                <!-- Tab 1 -->
+                <a class="hover:text-green-600" href="#">Lineamientos Convenios y Contratos UTL</a>
+                <a class="hover:text-green-600" href="#">Decreto 240</a>
+                <a class="hover:text-green-600" href="#">Reglamento Interior de la Universidad Tecnológica de León</a>
+                <a class="hover:text-green-600" href="#">Reglamento del Consejo Directivo</a>
+                <a class="hover:text-green-600" href="#">Reglamento de Ingresos Propios</a>
+                <a class="hover:text-green-600" href="#">Reglamento RIPPPA</a>
+                <a class="hover:text-green-600" href="#">Código de Conducta</a>
+                <a class="hover:text-green-600" href="#">Políticas para Establecer la Carga Académica del profesorado de
+                    la Universidad Tecnológica de León</a>
+                <a class="hover:text-green-600" href="#">Políticas de uso de estacionamiento</a>
+                <a class="hover:text-green-600" href="#">Criterios Generales para la Organización de los Archivos</a>
             </div>
 
             <div id="tab-tramite-2" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-2'">
@@ -94,7 +146,7 @@
                 <a href="#" class="hover:text-green-600">Presea León UTL</a>
                 <a href="#" class="hover:text-green-600">Presea Moneda UTL</a>
                 <a href="#" class="hover:text-green-600">Reglamento Deportivo</a>
-              </div>
+            </div>
 
             <div id="tab-tramite-3" class="mb-4 flex flex-col" x-show="activeTab === 'tab-tramite-3'">
                 <!-- Tab 3 -->
@@ -117,10 +169,11 @@
                     <!-- Noticia 1 -->
                     <div class="swiper-slide">
                         <div class="card bg-white overflow-hidden hover:shadow-xl">
-                            <img src="https://www.utleon.edu.mx/resource/img/banners/1_202209140329.jpeg" alt="Noticia 1"
-                                class="w-full h-48 object-cover">
+                            <img src="https://www.utleon.edu.mx/resource/img/banners/1_202209140329.jpeg"
+                                alt="Noticia 1" class="w-full h-48 object-cover">
                             <div class="p-4">
-                                <h3 class="text-xl font-semibold mb-2">Egresadas y egresados UTL en 1er Encuentro de Egresados Gto </h3>
+                                <h3 class="text-xl font-semibold mb-2">Egresadas y egresados UTL en 1er Encuentro de
+                                    Egresados Gto </h3>
                                 <p class="text-gray-700">Egresadas y egresados UTL en 1er Encuentro de Egresados Gto</p>
                                 <a href="#"
                                     class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Leer
@@ -132,8 +185,8 @@
                     <!-- Noticia 2 -->
                     <div class="swiper-slide">
                         <div class="card bg-white overflow-hidden hover:shadow-xl">
-                            <img src="https://www.utleon.edu.mx/admin/img_noticia/976_09292023054032.jpg" alt="Noticia 2"
-                                class="w-full h-48 object-cover">
+                            <img src="https://www.utleon.edu.mx/admin/img_noticia/976_09292023054032.jpg"
+                                alt="Noticia 2" class="w-full h-48 object-cover">
                             <div class="p-4">
                                 <h3 class="text-xl font-semibold mb-2">Firma convenio la UTL con CANIRAC Y AMHML </h3>
                                 <p class="text-gray-700">Firma convenio la UTL con CANIRAC Y AMHML </p>
@@ -147,11 +200,13 @@
                     <!-- Noticia 3 -->
                     <div class="swiper-slide">
                         <div class="card bg-white overflow-hidden hover:shadow-xl">
-                            <img src="https://www.utleon.edu.mx/admin/img_noticia/974_09282023114423.jpg" alt="Noticia 3"
-                                class="w-full h-48 object-cover">
+                            <img src="https://www.utleon.edu.mx/admin/img_noticia/974_09282023114423.jpg"
+                                alt="Noticia 3" class="w-full h-48 object-cover">
                             <div class="p-4">
-                                <h3 class="text-xl font-semibold mb-2">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28 ANIVERSARIO</h3>
-                                <p class="text-gray-700">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28 ANIVERSARIO</p>
+                                <h3 class="text-xl font-semibold mb-2">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28
+                                    ANIVERSARIO</h3>
+                                <p class="text-gray-700">LA UNIVERSIDAD TECNOLÓGICA DE LEÓN CELEBRA SU 28 ANIVERSARIO
+                                </p>
                                 <a href="#"
                                     class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Leer
                                     más</a>
@@ -165,7 +220,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="container mx-auto mt-8" id="eventos">
         <div class="text-3xl font-semibold text-gray-800 mb-2">Eventos</div>
         <div class="text-lg text-gray-600 mb-6">Descubre nuestros próximos eventos y actividades</div>
@@ -192,14 +247,17 @@
                             <div class="swiper-slide">
                                 <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
                                     <!-- Utiliza h-full para ocupar toda la altura -->
-                                    <img src="https://www.uv.mx/prensa/files/2022/09/140922-SIMULACRO-1.jpg" alt="Evento 1"
-                                        class="w-full h-48 object-cover">
+                                    <img src="https://www.uv.mx/prensa/files/2022/09/140922-SIMULACRO-1.jpg"
+                                        alt="Evento 1" class="w-full h-48 object-cover">
                                     <div class="p-4">
                                         <h3 class="text-xl font-semibold mb-2">Simulacro</h3>
                                         <p class="text-gray-700">Fecha: 07/12/2023</p>
                                         <p class="text-gray-700">Ubicación: Campus central</p>
                                         <a href="#"
-                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Evaluar la capacidad de respuesta y atención a los protocolos de emergencia por parte de la Comunidad Educativa y de la Unidad Interna de Protección Civil.</a>
+                                            class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-full text-sm transition duration-300">Evaluar
+                                            la capacidad de respuesta y atención a los protocolos de emergencia por
+                                            parte de la Comunidad Educativa y de la Unidad Interna de Protección
+                                            Civil.</a>
                                     </div>
                                 </div>
                             </div>
@@ -208,8 +266,8 @@
                             <div class="swiper-slide">
                                 <div class="card bg-white overflow-hidden hover:shadow-xl h-full">
                                     <!-- Utiliza h-full para ocupar toda la altura -->
-                                    <img src="https://www.utleon.edu.mx/resource/img/avisos_servicios/Banner_oficina_virtual_escolares_2_202209140402.jpg" alt="Evento 2"
-                                        class="w-full h-48 object-cover">
+                                    <img src="https://www.utleon.edu.mx/resource/img/avisos_servicios/Banner_oficina_virtual_escolares_2_202209140402.jpg"
+                                        alt="Evento 2" class="w-full h-48 object-cover">
                                     <div class="p-4">
                                         <h3 class="text-xl font-semibold mb-2">Evento 2</h3>
                                         <p class="text-gray-700">Fecha: [Fecha del evento]</p>

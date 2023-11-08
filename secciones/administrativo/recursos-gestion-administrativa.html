@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universidad Tecnológica de León</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css" rel="stylesheet" />
+</head>
+
+<body class="font-sans bg-gray-100">
+    <header class="header">
+        <!-- Barra de navegación -->
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <div class="logo">
+                <a href="../../index.html">
+                    <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png"
+                        alt="Universidad Tecnológica de León" class="h-32" />
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Aspirante</a>
+                    <div class="sub-menu">
+                        <a href="../admisiones.html" class="hover:text-green-600">Oferta Educativa</a>
+                        <a href="../aspirante/ingreso.html" class="hover:text-green-600">Ingreso</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Estudiante</a>
+                    <div class="sub-menu">
+                        <a href="../estudiante/tramites.html" class="hover:text-green-600">Trámites Escolares</a>
+                        <a href="../estudiante/servicios.html" class="hover:text-green-600">Servicios Integrales para el
+                            Alumnado</a>
+                        <a href="../estudiante/normativa.html" class="hover:text-green-600">Normativa Estudiantil</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Quejas y Denuncias</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Docente</a>
+                    <div class="sub-menu">
+                        <a href="../docente/recursos-gestion.html" class="hover:text-green-600">Recursos para la Gestión
+                            Docente</a>
+                        <a href="https://utleon.edu.mx/resource/documentos/CIV_Solicitud%202%20Politicas%20de%20carga%20acad%C3%A9mica.pdf"
+                            class="hover:text-green-600">Normativa</a>
+                        <a href="../docente/desarrollo-academico.html" class="hover:text-green-600">Desarrollo Académico
+                            y Docente</a>
+                        <!-- <a href="#" class="hover:text-green-600">Investigacion UTL</a>
+                        <a href="#" class="hover:text-green-600">Salud Integral</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Administrativo</a>
+                    <div class="sub-menu">
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Recursos para la Gestión Administrativa</a>
+                        <!-- <a href="#" class="hover:text-green-600">Desarrollo Humano y Organizacional</a> -->
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <!-- <a href="#" class="hover:text-green-600">Seguridad Institucional</a> -->
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Empresario</a>
+                    <div class="sub-menu">
+                        <a href="../empresario/vinculacion-empresarial.html" class="hover:text-green-600">Vinculacion
+                            Empresarial</a>
+                        <a href="../empresario/servicios-industria.html" class="hover:text-green-600">Servicios a la
+                            Industria</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Soy Egresado</a>
+                    <div class="sub-menu">
+                        <a href="../egresado/bolsa-trabajo.html" class="hover:text-green-600">Bolsa de Trabajo</a>
+                        <a href="../egresado/emprendimiento.html" class="hover:text-green-600">Emprendimiento</a>
+                        <a href="../egresado/educacion-continua.html" class="hover:text-green-600">Educacion
+                            Continua</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Somos UTL</a>
+                    <div class="sub-menu">
+                        <a href="../utl/utl.html" class="hover:text-green-600">Conoce la UTL</a>
+                        <a href="../utl/calidad.html" class="hover:text-green-600">Calidad</a>
+                        <a href="../administrativo/recursos-gestion-administrativa.html"
+                            class="hover:text-green-600">Difusión e Imagen Institucional</a>
+                        <!-- <a href="#" class="hover:text-green-600">Organos Colegiados</a> -->
+                        <a href="../normativa.html" class="hover:text-green-600">Normativa</a>
+                        <a href="../administrativo/transparencia.html" class="hover:text-green-600">Transparencia</a>
+                        <a href="../contacto.html" class="hover:text-green-600">Contáctanos</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto mt-8">
+        <div class="text-3xl font-semibold text-gray-800 mb-2">Recursos para la Gestión Administrativa</div>
+        <div class="text-lg text-gray-600 mb-6">
+            La Universidad Tecnológica de León, a través de la Dirección de Desarrollo Humano y Organizacional, ofrece
+            a su personal administrativo un programa de recursos para la gestión administrativa, con el objetivo de
+            fortalecer sus competencias profesionales y pedagógicas, para que puedan desempeñar su labor docente de
+            manera eficiente y eficaz.
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Submenú Sticky -->
+            <div class="sm:col-span-1 lg:col-span-1">
+                <div class="sticky top-0">
+                    <ul class="bg-white p-4 shadow-lg">
+                        <!-- SITO -->
+                        <li><a class="text-lg text-blue-600 mb-6" href="https://sito.utleon.edu.mx">SITO</a></li>
+                        <!-- SGI -->
+                        <li><a class="text-lg text-blue-600 mb-6" href="https://sgi.utleon.edu.mx">SGI</a></li>
+                        <!-- Correo Institucional -->
+                        <li><a class="text-lg text-blue-600 mb-6" href="https://www.office.com/">Correo
+                                Institucional</a></li>
+                        <!-- Difusion e imagen institucional -->
+                        <li><a class="text-lg text-blue-600 mb-6" href="#difusion-imagen-institucional">Difusión e
+                                Imagen
+                                Institucional</a></li>
+                        <!-- Calendario -->
+                        <li><a class="text-lg text-blue-600 mb-6"
+                                href="https://www.utleon.edu.mx/resource/img/CALENDARIO%20LEÓN.jpg">Calendario
+                                Escolar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contenido de servicios -->
+            <div class="sm:col-span-2 lg:col-span-2">
+                <!-- Contenido de servicios aquí -->
+
+                <!-- difusion e imagen institucional -->
+                <div id="difusion-imagen-institucional" class="mb-6">
+                    <div class="text-3xl font-semibold text-gray-800 mb-2">Difusión e Imagen Institucional</div>
+                    <div class="text-lg text-gray-600 mb-6">
+                        El departamento de Imagen Institucional es el encargado del diseño gráfico de conceptos,
+                        productos y campañas de difusión internas y externas que sean congruentes y apoyen al
+                        posicionamiento de la institución.
+                    </div>
+                    <div class="text-lg text-gray-600 mb-6">
+                        Una de sus principales funciones es verificar el correcto uso del logotipo institucional, por lo
+                        cual, ponemos a su disposición el Manual de Identidad Corporativa para que se apegue a sus
+                        lineamientos.
+                    </div>
+                    <div class="text-lg text-gray-600 mb-6">
+                        Antes de producir cualquier material que incluya el logotipo institucional, deberá solicitar su
+                        validación con el Departamento de Imagen a la ext. 213 o al correo <a class="text-blue-600"
+                            href="mailto:argomez@utleon.edu.mx">argomez@utleon.edu.mx</a>.
+                    </div>
+
+                    <!-- titulo: solicitud de diseño y 2 urls en lista -->
+                    <div class="m-5">
+                        <div class="text-3xl font-semibold text-gray-800">Lineamientos del departamento de imagen</div>
+                        <a href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/docs/manual_utl/manual_utl.html#p=1"
+                            class="text-lg text-blue-600 mb-6">Manual de Imagen Institucional</a>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Solicitud de Diseño</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/docs/politica-servicio-imagen.pdf">Políticas
+                                    de Servicio de Diseño</a>
+                            </div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/docs/FRDRP03_A_Solicitud_de_Diseno.xlsx">Formato
+                                    de Solicitud de Servicio</a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Solicitud de Diseño Web</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/docs/Politicas_web.docx">Políticas
+                                    de Servicio de Diseño Web</a>
+                            </div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/docs/FRDRP04_A_Solicitud_diseno_Web.xlsx">Formato
+                                    de Solicitud de Servicio Web</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-5">
+                        <div class="text-3xl font-semibold text-gray-800">Firma Electrónica</div>
+                        <a href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Firma%20electronica/Instrucciones%20firma%20institucional_2021_%20JPG.docx"
+                            class="text-lg text-blue-600 mb-6">Instrucciones para firma de correo institucional
+                            UTL-UAS</a>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">León</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Firma%20electronica/VEDA_editable%20%20firma%20institucional_UTL%202021.pptx">Firma
+                                    de correo institucional UTL León</a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Acámbaro</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Firma%20electronica/VEDA_editable%20%20firma%20institucional_UAS%202021.pptx">Firma
+                                    de correo institucional UTL Acámbaro</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-5">
+                        <div class="text-3xl font-semibold text-gray-800">Plantillas para presentaciones</div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">León</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_2021/Plantillas%20para%20presentacion/UTL/Presentacion1_Leon_2021.pptx">Plantilla
+                                    power point para presentaciones 1 UTL León</a>
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_2021/Plantillas%20para%20presentacion/UTL/Presentacion2_Leon_2021.pptx">Plantilla
+                                    power point para presentaciones 2 UTL León</a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Acámbaro</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_2021/Plantillas%20para%20presentacion/UAS/Presentacin1_UAS_2021.pptx">Plantilla
+                                    power point para presentaciones 1 UTL Acámbaro</a>
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_2021/Plantillas%20para%20presentacion/UAS/Presentacin2_UAS_2021.pptx">Plantilla
+                                    power point para presentaciones 2 UTL Acámbaro</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-5">
+                        <div class="text-3xl font-semibold text-gray-800">Formato institucional para avisos</div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">León</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Formato%20institucional/Hoja_avisos_%20reportes%202021_LEON.docx">Formato
+                                    institucional para avisos o reportes UTL León</a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Acámbaro</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Formato%20institucional/Hoja_avisos_%20reportes%202021_UAS.docx">Formato
+                                    institucional para avisos o reportes UTL Acámbaro</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="m-5">
+                        <div class="text-3xl font-semibold text-gray-800">Fondos de pantalla</div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">León</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Fondos%20de%20pantalla/wallpaper_2021.jpg">UTL
+                                    León Wallpaper</a>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 shadow-lg m-2">
+                            <div class="text-xl font-semibold text-gray-800">Acámbaro</div>
+                            <div class="text-lg text-blue-600 ">
+                                <a
+                                    href="https://www.utleon.edu.mx/public_html/difusion-e-imagen/imagen-institucional/imagen_veda2021/Fondos%20de%20pantalla/wallpaper_2021_UAS.jpg">UTL
+                                    Acámbaro Wallpaper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <img src="https://www.utleon.edu.mx/resource/iconos/footer-logo_2022.jpg" alt="Universidad Tecnológica de León"
+        class="h-32 mx-auto mt-4" />
+    <footer class="bg-gray-900 text-white py-8">
+        <!-- Pie de página -->
+        <div class="container mx-auto text-center">
+            <img src="https://utleon.edu.mx/resource/iconos/LOGO%20UTL_plasta.png" alt="Universidad Tecnológica de León"
+                class="h-32 mx-auto" />
+            <div class="text-gray-400 text-sm mt-2">
+                &copy; Universidad Tecnológica de León, 2023. Todos los derechos
+                reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var calendarEl = document.getElementById("calendario");
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: "dayGridMonth", // Puedes cambiar la vista inicial según tus necesidades
+                events: [
+                    {
+                        title: "Evento 1",
+                        start: "2023-09-30",
+                        end: "2023-10-02",
+                    },
+                    {
+                        title: "Evento 2",
+                        start: "2023-10-05",
+                        end: "2023-10-06",
+                    },
+                    // Puedes agregar más eventos aquí
+                ],
+                height: "parent", // Ajusta la altura según tus necesidades
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+
+</html>
